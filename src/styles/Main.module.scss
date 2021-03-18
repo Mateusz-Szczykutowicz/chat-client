@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    main {
+        height: 100vh;
+    }
+    .left {
+        width: 320px;
+        height: 100vh;
+    }
+    .right {
+        width: 360px;
+        height: 100vh;
+    }
+}

@@ -1,0 +1,45 @@
+.wrapper {
+    width: 100%;
+    height: calc(100% - 80px);
+    margin-top: 40px;
+
+    .currentRoom {
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 100%;
+        height: 120px;
+        margin-bottom: 20px;
+        h3 {
+            position: absolute;
+            font-size: 16px;
+            padding: 5px 20px;
+            border-bottom: 1px solid black;
+            border-right: 1px solid black;
+            border-radius: 5px 0 5px 0;
+        }
+        p {
+            font-size: 36px;
+            text-align: center;
+            line-height: 120px;
+        }
+    }
+    .room {
+        border: 1px solid black;
+        height: 760px;
+        overflow: hidden;
+        h3 {
+            text-align: center;
+            height: 120px;
+            line-height: 120px;
+            font-size: 36px;
+            font-weight: normal;
+            border-bottom: 1px solid black;
+        }
+        .rooms {
+            padding: 20px;
+            p {
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
