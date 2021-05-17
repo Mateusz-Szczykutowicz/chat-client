@@ -3,9 +3,12 @@ import UserMessage from "./UserMessage";
 
 import styles from "../styles/Chat.module.scss";
 
+import Socket from "../scripts/socket";
+
 const Chat = () => {
     return (
         <>
+            <Socket />
             <div className={styles.wrapper}>
                 <div className={styles.chat}>
                     <SystemMessage
