@@ -44,13 +44,14 @@
 
 import { useState, useEffect } from "react";
 import socketIOClient from "socket.io-client";
-const ENDPOINT = "http://localhost:3000";
+// const ENDPOINT = "http://localhost:3000";
+const ENDPOINT = "http://127.0.0.0:3000";
 
 function Socket() {
     const [response, setResponse] = useState("");
 
     useEffect(() => {
-        const socket = socketIOClient(ENDPOINT);
+        const socket = socketIOClient(ENDPOINT, { secure: false });
         socket.on("FromAPI", (data) => {
             setResponse(data);
         });

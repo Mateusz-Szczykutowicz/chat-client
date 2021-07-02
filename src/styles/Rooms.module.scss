@@ -40,6 +40,10 @@
             p {
                 margin-bottom: 25px;
             }
+            p:hover {
+                color: red;
+                cursor: pointer;
+            }
         }
     }
 }
